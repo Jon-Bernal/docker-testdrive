@@ -6,7 +6,7 @@ COPY package.json .
 RUN npm install
 # copy the rest of the files (files you wrote for your app)
 COPY . ./
-# Port to open
+# Port to open (when you open a port)
 EXPOSE 3000
 # command to run the app
 CMD ["node","index.js"]
